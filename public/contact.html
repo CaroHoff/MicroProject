@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .contact-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      gap: 2rem;
+    }
+
+    .contact-text {
+      flex: 1;
+      padding: 1.5rem;
+    }
+
+    .contact-image {
+      flex: 1;
+      padding: 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .contact-image img {
+      width: 100%;
+      max-width: 600px;
+      border: none;
+      box-shadow: none;
+      border-radius: 16px;
+      display: block;
+    }
+
+    nav.top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    nav.top-nav ul {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav.top-nav a {
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+      background-color: #1875E8;
+      padding: 8px 16px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav.top-nav a:hover {
+      background-color: #0f5bb7;
+    }
+
+    @media screen and (max-width: 900px) {
+      .contact-wrapper {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .contact-image {
+        margin-top: 1rem;
+      }
+
+      .contact-image img {
+        max-width: 100%;
+      }
+
+      nav.top-nav {
+        position: static;
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+
+      nav.top-nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container" style="position: relative;">
+    <!-- Top-Right Navigation -->
+    <nav class="top-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="contact-wrapper">
+      <div class="contact-text">
+        <h1>Contact Us</h1>
+        <p class="texto__paragrafo">
+          We'd love to hear from you! Reach out to us with any questions, feedback, or collaboration ideas.
+        </p>
+        <p class="texto__paragrafo">
+          📧 Email: contact@gamesapi.com<br>
+          ☎️ Phone: +1 (555) 987-6543
+        </p>
+      </div>
+      <div class="contact-image">
+        <img src="img/img2.jpg" alt="Contact illustration">
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .about-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      gap: 2rem;
+    }
+
+    .about-text {
+      flex: 1;
+      padding: 1.5rem;
+    }
+
+    .about-image {
+      flex: 1;
+      padding: 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .about-image img {
+      width: 100%;
+      max-width: 600px;
+      border: none;
+      box-shadow: none;
+      border-radius: 16px;
+      display: block;
+    }
+
+    nav.top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    nav.top-nav ul {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav.top-nav a {
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+      background-color: #1875E8;
+      padding: 8px 16px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav.top-nav a:hover {
+      background-color: #0f5bb7;
+    }
+
+    @media screen and (max-width: 900px) {
+      .about-wrapper {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about-image {
+        margin-top: 1rem;
+      }
+
+      .about-image img {
+        max-width: 100%;
+      }
+
+      nav.top-nav {
+        position: static;
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+
+      nav.top-nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container" style="position: relative;">
+    <!-- Top-Right Navigation -->
+    <nav class="top-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="about-wrapper">
+      <div class="about-text">
+        <h1>About Us</h1>
+        <p class="texto__paragrafo">
+          We are a team of game developers focused on creating interactive web experiences using modern web technologies.
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="img/img1.jpg" alt="Team Working">
+      </div>
+    </div>
+  </div>
+</body>
+</html>

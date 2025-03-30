@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Games API Demo</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/game.js" defer></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      position: relative;
+      padding: 2rem;
+    }
+
+    nav.top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    nav.top-nav ul {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav.top-nav a {
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+      background-color: #1875E8;
+      padding: 8px 16px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav.top-nav a:hover {
+      background-color: #0f5bb7;
+    }
+
+    .logo-center {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    .logo-center img {
+      max-width: 500px;
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Top Right Navigation Menu -->
+    <nav class="top-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container__informacoes">
+      <div class="logo-center">
+        <img src="img/img3.jpg" alt="Game Logo">
+      </div>
+      <h1>Games Info</h1>
+      <p class="texto__paragrafo">Click the button below to fetch games data from our API:</p>
+      <button id="fetchData" class="container__botao">Get Games</button>
+      <div id="gamesContainer" class="games-grid"></div>
+    </div>
+  </div>
+</body>
+</html>
